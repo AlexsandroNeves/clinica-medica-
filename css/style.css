@@ -236,14 +236,17 @@ article .news-image{
     margin-top: 30px;
 }
 article .news-image img{
-    width: 100%;
-    height: auto;
+    width: 110%;
+    height: 240px;
+    border-radius: 4px;
 }
 
 article .news-title{
-    margin: 25px 0;
-    font-size: 23px;
+    margin: 5px 0;
+    font-size: 21px;
     color: #000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 article .news-resumo{
@@ -309,6 +312,7 @@ footer{
 
     nav ul {
         flex-direction: column;
+        display: none;
     }
     
     header{
