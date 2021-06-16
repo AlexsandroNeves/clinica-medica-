@@ -236,7 +236,7 @@ article .news-image{
     margin-top: 30px;
 }
 article .news-image img{
-    width: 110%;
+    width: 100%;
     height: 240px;
     border-radius: 4px;
 }
@@ -322,6 +322,11 @@ footer{
 
     .logo{
         padding-left: 10px;
+    }
+    article .news-image img{
+        width: 100%;
+       
+        border-radius: 4px;
     }
     
     .menuMobile{
