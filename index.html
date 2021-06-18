@@ -17,7 +17,7 @@
     <div>
         <header>
 
-            <div class="container">
+            <div class="container menu-responsivo">
                 <div class="logo">
                     <a href="#"><img src="img/logo.png" alt=""></a>
                 </div>
@@ -32,10 +32,10 @@
                             <div class="mm_line"></div>
                         </div>
                         <ul>
-                            <li class="active"> <a href="#">Home</a> </li>
+                            <li class="active"> <a href="#home">Home</a> </li>
                             <li><a href="#">Quem Somos</a> </li>
-                            <li><a href="#">Serviços</a> </li>
-                            <li><a href="#">Contato</a> </li>
+                            <li><a href="#servico">Serviços</a> </li>
+                            <li><a href="#contato">Contato</a> </li>
                         </ul>
                     </nav>
 
@@ -44,7 +44,7 @@
         </header>
 
         <section id="banner">
-            <div class="container columm">
+            <div class="container columm" id="home">
                 <div class="banner-principal">
                     <h1>Experiência de alto nível</h1>
                     <h2>Medicenter é um modelo responsivo perfeito para todos os tamanhos de tela</h2>
@@ -167,7 +167,7 @@
                 </section>
                 <aside>
                     <div class="wigth">
-                        <div class="wigth-title">
+                        <div class="wigth-title" id="servico">
                             <div class="wight-title-text">Departamentos</div>
                             <div class="wight-title_bar">
 
@@ -175,7 +175,7 @@
                             <div class="wight-body"> ...</div>
                         </div>
                     </div>
-                    <div class="wigth">
+                    <div class="wigth" id="contato">
                         <div class="wigth-title">
                             <div class="wight-title-text">Agendar Consulta</div>
                             <div class="wight-title_bar"></div>
@@ -223,7 +223,17 @@
         </footer>
     </div>
 
-
+<script>
+    window.onload = function(){
+        document.querySelector(".menuMobile").addEventListener("click",function(){
+            if(document.querySelector(".menu > nav > ul").style.display =='flex'){
+                document.querySelector(".menu > nav > ul").style.display='none';      
+            }else{
+                document.querySelector(".menu > nav > ul").style.display = 'flex';
+            }
+        })
+    }
+</script>
 
 
 
